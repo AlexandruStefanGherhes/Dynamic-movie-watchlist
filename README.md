@@ -15,7 +15,7 @@ Users are allowed to:
 
 Desktop version
 
-![desktop version](/ss/desktop.png)
+![desktop version](/ss/desktopActive.png)
 
 Mobile version
 
