@@ -1,7 +1,6 @@
-const searchBtn = document.getElementById("search-btn");
+
 const form = document.querySelector(".form");
 const input = document.getElementById("search");
-const main = document.querySelector(".main");
 const movies = document.querySelector(".movies");
 const lessBtn = document.querySelectorAll(".less");
 const readBtn = document.querySelectorAll(".read");
@@ -29,11 +28,11 @@ form.addEventListener("submit", (e) => {
   movies.innerHTML = "";
   explore.style.display = "none";
   getMovies();
-  form.reset();
+//   form.reset();
 });
 
 document.addEventListener("click", (e) => {
-  const target = e.target.closest(".watchlist-btn");
+  const target = e.target.closest(".movie-details");
   if (target) {
     const container = target.closest(".movie");
     const containerImage = container.querySelector(".movies__poster").src;
@@ -165,4 +164,5 @@ function removeLocalStorage(title) {
   saveLocal();
 }
 
-export { removeLocalStorage, getLocalStorage, movieList, movies };
+
+export { movieList, movies, Movie, removeLocalStorage,getLocalStorage };

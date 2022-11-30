@@ -1,9 +1,9 @@
 import {
-  removeLocalStorage,
-  getLocalStorage,
   movieList,
   movies,
-} from "./index.js";
+  removeLocalStorage,
+  getLocalStorage,
+} from "../index.js";
 
 getLocalStorage();
 console.log(movieList);
@@ -53,7 +53,7 @@ function renderMovies() {
 }
 
 document.addEventListener("click", (e) => {
-  const target = e.target.closest(".remove-btn");
+  const target = e.target.closest(".remove");
   if (target) {
     const title = e.target
       .closest(".details")
